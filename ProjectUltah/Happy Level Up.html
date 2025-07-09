@@ -1,0 +1,162 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Happy Level Up For You 🎉</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Pacifico&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: url('background.jpg.jpg') no-repeat center center fixed;
+      background-size: cover;
+      color: #fff;
+      text-align: center;
+      position: relative;
+      min-height: 100vh;
+    }
+    .container {
+      padding: 2rem;
+      animation: fadeIn 2s ease-in;
+    }
+    .title {
+      font-family: 'Pacifico', cursive;
+      font-size: 4rem;
+      text-shadow: 2px 2px 5px #000;
+      color: #FFD700;
+    }
+    .message {
+      font-size: 1.5rem;
+      background: rgba(0,0,0,0.6);
+      display: inline-block;
+      padding: 1.5rem;
+      border-radius: 12px;
+      margin: 1rem auto;
+      font-weight: 400;
+    }
+    .photo-gallery img {
+      width: 150px;
+      margin: 0.5rem;
+      border-radius: 10px;
+      border: 3px solid #fff;
+      animation: float 4s infinite ease-in-out;
+    }
+    .cake {
+      position: relative;
+      width: 250px;
+      margin: 3rem auto;
+      animation: bounce 2s infinite;
+    }
+    .layer {
+      width: 250px;
+      height: 50px;
+      background: #e59191;
+      border-radius: 10px;
+      margin-bottom: -15px;
+      position: relative;
+      z-index: 1;
+    }
+    .candle {
+      position: absolute;
+      top: -40px;
+      left: 50%;
+      width: 10px;
+      height: 40px;
+      background: #fff;
+      transform: translateX(-50%);
+      animation: floatCandle 3s infinite ease-in-out;
+    }
+    .flame {
+      position: absolute;
+      top: -50px;
+      left: 50%;
+      width: 0;
+      height: 0;
+      border: 5px solid transparent;
+      border-bottom: 10px solid #ffcb42;
+      transform: translateX(-50%);
+      animation: flicker 0.5s infinite alternate;
+    }
+    @keyframes flicker {
+      0% { opacity: 1; }
+      100% { opacity: 0.6; }
+    }
+    @keyframes fadeIn {
+      from {opacity:0; transform:translateY(50px)}
+      to {opacity:1; transform:translateY(0)}
+    }
+    @keyframes float {
+      0%, 100% {transform:translateY(0);}
+      50% {transform:translateY(-10px);}
+    }
+    @keyframes floatCandle {
+      0%, 100% {transform:translateY(0);}
+      50% {transform:translateY(-5px);}
+    }
+    @keyframes bounce {
+      0%, 100% {transform:translateY(0);}
+      50% {transform:translateY(-10px);}
+    }
+    .footer {
+      margin-top: 2rem;
+      font-size: 1rem;
+      color: #3944bc;
+    }
+    .animation-container {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      margin-top: 2rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1 class="title">🎉 Happy birthday Kay 🎉</h1>
+    <div class="message">
+      Happy Level Up, Sebelumnya gw minta maap nih buat misalnya ada foto lu yang gw screenshot tanpa ada perizinan dari lu maapin gw ya gw cuma mau ngerancang ini Ga Banyak Ketikan
+       Ya Selamat Ulang Tahun Deh Yang Keeeeeee - 18 Tahun BTW Ada tombol musik Di bawah Buat munculin musiknya wajar masih pemula.
+       Semoga selalu diberi kesehatan, kebahagiaan, dan kesuksesan dunia akhirat. Barakallah fii umrik 🌸 
+      </div>
+       <div class="animation-container">
+      
+      <img src="gift-9817_256.gif.gif" alt="Gift Animation" width="200px"> <img src="birthday-17076.gif.gif" alt="Birthday Cake Animation" width="200px">
+      
+     
+    </div>
+    
+    <div class="photo-gallery">
+      <img src="foto1.jpg"><img src="foto2.jpg"><img src="foto3.jpg"><img src="foto4.jpg">
+    </div>
+   
+    <div class="footer"> Someone That Respect On You .</div>
+  </div>
+
+  <audio id="backgroundAudio" autoplay loop preload="auto">
+  <source src="Happy Birthday Flute - Benote.mp3" type="audio/mp3">
+  Your browser does not support the audio element.
+  </audio>
+  <script>
+  window.onload = function() {
+    var audio = document.getElementById('backgroundAudio');
+    audio.play(); // Memastikan audio diputar
+  };
+  </script>
+
+  <!-- Tambahkan tombol play/pause di bawah audio -->
+<button onclick="toggleAudio()">Music</button>
+<script>
+function toggleAudio() {
+  var audio = document.getElementById('backgroundAudio');
+  if (audio.paused) {
+    audio.play();
+  } else {
+    audio.pause();
+  }
+}
+</script>
+  
+</body>
+</html>
